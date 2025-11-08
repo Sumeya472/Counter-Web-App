@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Web App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="counter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Counter Web App</h1>
+
+      <div class="theme-selector">
+        <div
+          class="theme-btn theme-light active"
+          data-theme="light"
+          title="Light Theme"
+        ></div>
+        <div
+          class="theme-btn theme-dark"
+          data-theme="dark"
+          title="Dark Theme"
+        ></div>
+        <div
+          class="theme-btn theme-nature"
+          data-theme="nature"
+          title="Nature Theme"
+        ></div>
+        <div
+          class="theme-btn theme-sunset"
+          data-theme="sunset"
+          title="Sunset Theme"
+        ></div>
+      </div>
+
+      <div class="counter-container">
+        <div class="counter-bg" id="counterBg">0</div>
+        <div class="counter" id="counter">
+          <span class="counter-value">0</span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="decrement"><i class="fas fa-minus"></i> Decrement</button>
+        <button id="reset"><i class="fas fa-redo"></i> Reset</button>
+        <button id="increment"><i class="fas fa-plus"></i> Increment</button>
+      </div>
+
+      <p class="timestamp">Last Updated: <span id="timestamp">Never</span></p>
+    </div>
+    <script src="counter.js"></script>
+  </body>
+</html>
